@@ -1,0 +1,56 @@
+--DIM EMPLOYEE
+
+----Full Name
+FirstName + ' ' + ISNULL(MiddleName,'') + ' ' + LastName
+
+
+----Marital Status Description
+CASE
+WHEN MaritalStatus = 'M' THEN 'Married' 
+WHEN MaritalStatus = 'S' THEN 'Single'
+ELSE 'Not defined'  
+END
+
+
+----Gender Description
+CASE  
+WHEN Gender = 'M' THEN 'Male'
+WHEN Gender = 'F' THEN 'Female'  
+END
+
+
+
+--DIM CUSTOMER
+
+----Full Name
+FirstName + ' ' + isnull(MiddleName, '') + ' ' + LastName + isnull(Suffix,'') + ' - ' + CustomerAlternateKey
+
+
+----Marital Status Description
+CASE
+WHEN MaritalStatus = 'M' THEN 'Married'
+WHEN MaritalStatus = 'S' THEN 'Single'
+ELSE 'Not defined'
+END
+
+
+----Gender Description
+CASE   
+WHEN Gender = 'M' THEN 'Male'    
+WHEN Gender = 'F' THEN 'Female' 
+END
+
+
+
+--DIM DATE
+
+----Semester
+'Semester ' + CAST(CalendarSemester AS CHAR(1)) + ' – ' + CAST(CalendarYear AS CHAR(4))
+
+
+--Trimester
+'Trimester ' + CAST(CalendarQuarter AS CHAR(1)) + ' – ' + CAST(CalendarYear AS CHAR(4))
+
+
+--Month
+EnglishMonthName + '  ' + CAST(CalendarYear AS CHAR(4))
