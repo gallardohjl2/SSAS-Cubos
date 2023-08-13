@@ -35,7 +35,50 @@
       <Dimension>
         <ID>Customer</ID>
       </Dimension>
+      <Dimension>
+        <ID>Geography</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Internet Sales</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Sales Reason</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Reseller Sales</ID>
+      </Dimension>
     </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>cuboAdventureWorksDW2016</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Internet Sales</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Internet Sales</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Reseller Sales</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Reseller Sales</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Fact Internet Sales Reason</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Internet Sales Reason</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
     <DataSourceImpersonationInfo>
       <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
       <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>

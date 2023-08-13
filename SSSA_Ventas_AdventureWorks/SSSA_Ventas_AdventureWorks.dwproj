@@ -6,6 +6,18 @@
     <Name>SSSA_Ventas_AdventureWorks.database</Name>
     <FullPath>SSSA_Ventas_AdventureWorks.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>cuboAdventureWorksDW2016.cube</Name>
+      <FullPath>cuboAdventureWorksDW2016.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>cuboAdventureWorksDW2016.partitions</Name>
+          <FullPath>cuboAdventureWorksDW2016.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Currency.dim</Name>
@@ -38,6 +50,22 @@
     <ProjectItem>
       <Name>Customer.dim</Name>
       <FullPath>Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Geography.dim</Name>
+      <FullPath>Geography.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internet Sales.dim</Name>
+      <FullPath>Internet Sales.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales Reason.dim</Name>
+      <FullPath>Sales Reason.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reseller Sales.dim</Name>
+      <FullPath>Reseller Sales.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
