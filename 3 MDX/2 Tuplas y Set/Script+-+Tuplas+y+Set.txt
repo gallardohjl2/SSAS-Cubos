@@ -1,0 +1,38 @@
+--1
+SELECT
+[Measures].[Internet Sales Amount] ON COLUMNS,
+(
+	[Order Date].[Jerarquía].[Year],
+	[Customer].[Gender Description].[Gender].&[M]
+) ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+--2
+SELECT
+[Measures].[Internet Sales Amount] ON COLUMNS,
+{
+	([Order Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[F]),
+	([Order Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[M])
+}ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+--3
+SELECT
+[Measures].[Sales Amount] ON COLUMNS,
+(
+	[Ship Date].[Jerarquía].[Year],
+	[Customer].[Gender Description].[Gender].&[M]
+)ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+--4
+SELECT
+[Measures].[Sales Amount] ON COLUMNS,
+{
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[F]),
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[M])
+}ON ROWS
+FROM [cuboAdventureWorksDW2016];

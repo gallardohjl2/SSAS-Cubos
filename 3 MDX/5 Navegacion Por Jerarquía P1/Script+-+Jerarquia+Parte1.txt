@@ -1,0 +1,35 @@
+--1
+WITH MEMBER Measures.VentaAcumuladoInternet AS
+COALESCEEMPTY([Measures].[Internet Sales Amount],0),
+FORMAT_STRING='##0.00'
+SELECT
+[Geography].[Geographic Location].[State Province Name].&[Tasmania].PARENT ON COLUMNS,
+[Product].[Products Categories].[Product Subcategory Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentaAcumuladoInternet;
+
+
+--2
+SELECT
+{
+ANCESTORS ([Product].[Products Categories].[Product Name].&[479],2)
+} ON COLUMNS,
+[Measures].[Internet Sales Amount] ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+--3
+SELECT
+{
+	([Measures].[Internet Sales Amount]),
+	([Measures].[Internet Tax Amt])
+} ON COLUMNS,
+EXCEPT
+(
+	[Geography].[Geographic Location].[Country Region Name],
+	{
+		[Geography].[Geographic Location].[Country Region Name].&[France],
+		[Geography].[Geographic Location].[Country Region Name].&[Canada]
+	}
+) ON ROWS
+FROM [cuboAdventureWorksDW2016];

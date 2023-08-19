@@ -1,0 +1,25 @@
+--1
+SELECT
+[Order Date].[Jerarquía].[Year].&[2013].FIRSTCHILD ON COLUMNS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Sales Amount];
+
+
+--2
+SELECT
+[Order Date].[Jerarquía].[Year].&[2013].LASTCHILD ON COLUMNS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Sales Amount];
+
+
+--3
+SELECT
+{
+	([Measures].[Internet Sales Amount]),
+	([Measures].[Internet Tax Amt])
+} ON COLUMNS,
+{
+	([Promotion].[Promotion Categories].[Promotion Category].&[Customer].CHILDREN),
+	([Promotion].[Promotion Categories].[Promotion Category].&[Reseller].CHILDREN)
+}ON ROWS
+FROM [cuboAdventureWorksDW2016];

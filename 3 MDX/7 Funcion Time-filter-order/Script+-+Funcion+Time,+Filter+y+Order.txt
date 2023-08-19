@@ -1,0 +1,47 @@
+WITH MEMBER Measures.Crecimiento AS
+[Measures].[Internet Sales Amount] - 
+([Measures].[Internet Sales Amount], PARALLELPERIOD([Order Date].[Jerarquía].[Year])),
+FORMAT_STRING='##0.00'
+MEMBER Measures.VentasAcumuladasInternet AS
+[Measures].[Internet Sales Amount],
+FORMAT_STRING='##0.00'
+SELECT 
+{
+	Measures.VentasAcumuladasInternet, 
+	[Measures].Crecimiento
+} ON COLUMNS,
+GENERATE(
+	{
+		[Order Date].[Jerarquía].[Year].&[2012], 
+		[Order Date].[Jerarquía].[Year].&[2013]
+	},
+	DESCENDANTS(
+		[Order Date].[Jerarquía].currentmember, 
+		[Order Date].[Jerarquía].[Month]
+	)
+) ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+
+SELECT 
+[Measures].[Internet Sales Amount] ON COLUMNS,
+FILTER(
+	[Order Date].[Jerarquía].[Year].MEMBERS, 
+	[Measures].[Internet Sales Amount]>45000
+)ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+
+
+WITH MEMBER Measures.VentasTotalesInternet AS
+COALESCEEMPTY([Measures].[Internet Sales Amount],0),
+FORMAT_STRING='##0.00'
+SELECT
+Measures.VentasTotalesInternet ON COLUMNS,
+ORDER(
+	[SalesTerritory].[Sales Territory Country].MEMBERS,
+	[Measures].[Internet Sales Amount],
+	ASC
+) ON ROWS
+FROM [cuboAdventureWorksDW2016];

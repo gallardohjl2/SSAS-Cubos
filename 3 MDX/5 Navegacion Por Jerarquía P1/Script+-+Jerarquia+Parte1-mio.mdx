@@ -1,0 +1,55 @@
+
+
+-- Navegación por dimensión
+
+--Ejercio 1
+WITH MEMBER Measures.VentaAcumuladoInternet as
+COALESCEEMPTY([Measures].[Internet  Sales Amount], 0),
+FORMAT_STRING = '##0.00'
+SELECT [Geography].[Geography Location].[State Province Name].&[Tasmania].PARENT ON COLUMNS,
+[Product].[Products Categories].[Product Subcategory Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentaAcumuladoInternet;
+
+--Ejercicio 2.
+
+
+WITH MEMBER Measures.VentaAcumuladoInternet AS
+[Measures].[Internet  Sales Amount],
+FORMAT_STRING = '##0.00'
+select 
+{ ANCESTORS ([Product].[Products Categories].[Product Name].&[479], 1)} on columns,
+Measures.VentaAcumuladoInternet on rows
+from [cuboAdventureWorksDW2016];
+
+
+WITH MEMBER Measures.VentaAcumuladoInternet AS
+[Measures].[Internet  Sales Amount],
+FORMAT_STRING = '##0.00'
+select 
+{ ANCESTORS ([Product].[Products Categories].[Product Name].&[479], 2)} on columns,
+Measures.VentaAcumuladoInternet on rows
+from [cuboAdventureWorksDW2016];
+
+-- Ejercicio 3
+with member SalesAmount as
+COALESCEEMPTY([Measures].[Internet  Sales Amount],0),
+FORMAT_STRING = '##0.00'
+member TaxAmt as
+COALESCEEMPTY([Measures].[Internet  Tax Amt],0),
+FORMAT_STRING = '##0.00'
+Select 
+{
+	SalesAmount,
+	TaxAmt
+} on columns,
+except 
+(
+[Geography].[Geography Location].[Country Region Name],
+{
+[Geography].[Geography Location].[Country Region Name].&[France],
+[Geography].[Geography Location].[Country Region Name].&[Canada]
+}
+) on rows
+from [cuboAdventureWorksDW2016];
+

@@ -1,0 +1,43 @@
+SELECT
+FROM [cuboAdventureWorksDW2016];
+
+
+SELECT
+[Measures].[Recuento Internet Sales] ON COLUMNS
+FROM [cuboAdventureWorksDW2016];
+
+
+SELECT
+[Order Date].[Jerarquía].[Year] ON COLUMNS,
+[Product].[Products Categories].[Product Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Sales Amount];
+
+
+SELECT
+[Order Date].[Year].MEMBERS ON COLUMNS,
+[Product].[Product Name].MEMBERS ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Sales Amount];
+
+
+
+SELECT
+[Order Date].[Jerarquía].[Year].&[2014] ON COLUMNS,
+[Product].[Products Categories].[Product Name].&[478] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Sales Amount];
+
+
+SELECT
+[Ship Date].[Jerarquía].[Year] ON ROWS,
+[Product].[Products Categories].[Product Name] ON COLUMNS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Tax Amt];
+
+
+SELECT
+[Ship Date].[Jerarquía].[Year].&[2012] ON COLUMNS,
+[Geography].[Geographic Location].[Country Region Name].&[France] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet Tax Amt];

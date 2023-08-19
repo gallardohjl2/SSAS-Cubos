@@ -1,0 +1,41 @@
+-- Ejercicio 1 
+
+WITH SET [PAIS] AS
+{
+  ([Geography].[Geography Location].[Country Region Name].&[France]),
+  ([Geography].[Geography Location].[Country Region Name].&[United States])
+}
+MEMBER Measures.VentasTotalesInternet as
+COALESCEEMPTY([Measures].[Internet  Sales Amount],0), 
+ FORMAT_STRING= '##0.00'
+SELECT [PAIS] on columns, 
+[Product].[Products Categories].[Product Name] on rows
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentasTotalesInternet;
+
+-- EJERCICIO 2
+WITH SET [PAIS] AS
+{
+  [Geography].[Country Region Name].&[Australia],
+  [Geography].[Country Region Name].&[Canada]
+}
+MEMBER Measures.VentasTotalesInternet as
+COALESCEEMPTY([Measures].[Internet  Sales Amount],0), 
+ FORMAT_STRING= '##0.00'
+SELECT [PAIS] on columns, 
+[Customer].[Customer Location].[Customer Name] on rows
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentasTotalesInternet;
+
+
+WITH SET [PAIS] AS
+{
+  [Geography].[Country Region Name].&[Australia],
+  [Geography].[Country Region Name].&[Canada]
+}
+SELECT [PAIS] on columns, 
+[Customer].[Customer Name].&[26653] ON rows
+FROM [cuboAdventureWorksDW2016]
+WHERE [Measures].[Internet  Sales Amount]
+
+

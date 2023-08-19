@@ -1,0 +1,40 @@
+-- EJERCICIO 1 - TUPLAS
+
+SELECT [Measures].[Internet  Sales Amount] ON COLUMNS,
+(
+	[Order Date].[Jerarquía].[Year],
+	[Customer].[Gender Description].[Gender].&[M]) ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+-- EJERCICIO 2 - SET
+SELECT [Measures].[Internet  Sales Amount] ON COLUMNS,
+{
+  ([Order Date].[Jerarquía].[Year], [Customer].[Gender Description].[Gender].&[F]),
+  ([Order Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[M])
+} ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+--EJERCICIO 3 - TUPLAS
+SELECT [Measures].[Sales Amount] ON COLUMNS,
+(
+  [Ship Date].[Jerarquía].[Year],
+  [Customer].[Gender Description].[Gender].&[M]
+  
+) ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+-- EJERCICIO 4 - SET 
+
+SELECT [Measures].[Discount Amount] ON COLUMNS,
+{
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[M] ),
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[F])
+} ON ROWS
+FROM [cuboAdventureWorksDW2016];
+
+SELECT [Measures].[Sales Amount] ON COLUMNS,
+{
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[M] ),
+	([Ship Date].[Jerarquía].[Year],[Customer].[Gender Description].[Gender].&[F])
+} ON ROWS
+FROM [cuboAdventureWorksDW2016];

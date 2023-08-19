@@ -1,0 +1,43 @@
+--1
+WITH MEMBER Measures.VentaTotal AS
+COALESCEEMPTY([Measures].[Internet Sales Amount] + [Measures].[Sales Amount],0),
+FORMAT_STRING='##0.00'
+SELECT
+[Order Date].[Jerarquía].[Year] ON COLUMNS,
+[Geography].[Geographic Location].[Country Region Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentaTotal;
+
+
+--2
+WITH MEMBER Measures.VentaTotal AS
+COALESCEEMPTY([Measures].[Internet Sales Amount] + [Measures].[Sales Amount],0)
+MEMBER Measures.PorcentajeVentaInternet AS
+COALESCEEMPTY([Measures].[Internet Sales Amount]/Measures.VentaTotal,0),
+FORMAT_STRING='PERCENT'
+SELECT
+[Order Date].[Jerarquía].[Year] ON COLUMNS,
+[Geography].[Geographic Location].[Country Region Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.PorcentajeVentaInternet;
+
+
+
+--3
+WITH MEMBER [Order Date].[Jerarquía].[Year].&[2012].[Bimestre1 - 2012] AS
+[Order Date].[Jerarquía].[Month].&[January  2012] +
+[Order Date].[Jerarquía].[Month].&[February  2012]
+MEMBER [Order Date].[Jerarquía].[Year].&[2012].[Bimestre2 - 2012] AS
+[Order Date].[Jerarquía].[Month].&[March  2012] +
+[Order Date].[Jerarquía].[Month].&[April  2012]
+MEMBER Measures.VentasAcumuladasInternet AS
+COALESCEEMPTY([Measures].[Internet Sales Amount],0),
+FORMAT_STRING='##0.00'
+SELECT
+{
+	([Order Date].[Jerarquía].[Year].&[2012].[Bimestre1 - 2012]),
+	([Order Date].[Jerarquía].[Year].&[2012].[Bimestre2 - 2012])
+} ON COLUMNS,
+[Geography].[Geographic Location].[Country Region Name] ON ROWS
+FROM [cuboAdventureWorksDW2016]
+WHERE Measures.VentasAcumuladasInternet;
