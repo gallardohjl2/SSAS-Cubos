@@ -1,0 +1,35 @@
+1.- KPI Ventas USA
+
+--Expresión de Valor
+([Measures].[Internet Sales Amount],[SalesTerritory].[Jerarquía].[Sales Territory Country].&[United States])
+
+--Expresión Objetivo
+0.5*([Measures].[Sales Amount],[SalesTerritory].[Jerarquía].[Sales Territory Country].&[United States])
+
+--Expresión de Estado
+CASE
+WHEN KpiValue("KPI Ventas USA")>KpiGoal("KPI Ventas USA")
+THEN 1
+WHEN KpiValue("KPI Ventas USA") = KpiGoal("KPI Ventas USA")
+THEN 0
+ELSE -1
+END
+
+
+
+2.- KPI Ventas Francia
+
+--Expresión de Valor
+([Measures].[Internet Sales Amount],[SalesTerritory].[Jerarquía].[Sales Territory Country].&[France])
+
+--Expresión Objetivo
+0.5*([Measures].[Sales Amount],[SalesTerritory].[Jerarquía].[Sales Territory Country].&[France])
+
+--Expresión de Estado
+CASE
+WHEN KpiValue("KPI Ventas Francia")>KpiGoal("KPI Ventas Francia")
+THEN 1
+WHEN KpiValue("KPI Ventas Francia")=KpiGoal("KPI Ventas Francia")
+THEN 0
+ELSE -1
+END

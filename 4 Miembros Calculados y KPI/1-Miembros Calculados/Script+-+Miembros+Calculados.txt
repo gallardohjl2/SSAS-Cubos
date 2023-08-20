@@ -1,0 +1,15 @@
+1.- [Ventas del Periodo Pasado]
+
+--Expresión
+([Measures].[Sales Amount], parallelperiod([Order Date].[Jerarquía].currentmember.level,1,[Order Date].[Jerarquía].currentmember))
+
+
+
+2.- [Porcentaje de ventas]
+
+--Expresión
+CASE
+WHEN ISEMPTY([Ventas del Periodo Pasado])
+THEN 1
+ELSE ([Measures].[Sales Amount] - [Ventas del Periodo Pasado])/[Ventas del Periodo Pasado]
+END

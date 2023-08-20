@@ -19,105 +19,105 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>Kd/ktgZoJ6EhaaA+el92NIWpiuU=11/08/2023 10:35:05 p. m.11/08/2023 10:35:05 p. m.</TimeStamp>
+        <TimeStamp>Kd/ktgZoJ6EhaaA+el92NIWpiuU=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>AdventureWorksDW2016</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>2eOmrOKq1tclGpGoV7Kp7Owvq78=12/08/2023 08:26:16 p. m.11/08/2023 10:38:00 p. m.</TimeStamp>
+        <TimeStamp>2eOmrOKq1tclGpGoV7Kp7Owvq78=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>dsvAdventureWorksDW2016</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>DBIeDSESJ4FoJjfgvK4xPy9Xfog=11/08/2023 10:39:54 p. m.11/08/2023 10:39:54 p. m.</TimeStamp>
+        <TimeStamp>DBIeDSESJ4FoJjfgvK4xPy9Xfog=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Currency</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>bY/kJ+PlpM2rF+UFvYKaYL7Ci0c=12/08/2023 11:37:23 a. m.11/08/2023 11:26:14 p. m.</TimeStamp>
+        <TimeStamp>bY/kJ+PlpM2rF+UFvYKaYL7Ci0c=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Promotion</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>zFq6AmO7n+C7Xrr8l/8aCl2S3OY=12/08/2023 11:41:00 a. m.12/08/2023 12:01:20 a. m.</TimeStamp>
+        <TimeStamp>zFq6AmO7n+C7Xrr8l/8aCl2S3OY=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Dim Employee</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6czBZ9kYwNDLkKvgv+E/sUHFRZk=12/08/2023 11:59:34 a. m.11/08/2023 11:39:26 p. m.</TimeStamp>
+        <TimeStamp>6czBZ9kYwNDLkKvgv+E/sUHFRZk=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Product</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>kJh5j9xQUwsG2FVasXt5mdCH7AU=12/08/2023 11:52:56 a. m.12/08/2023 11:43:51 a. m.</TimeStamp>
+        <TimeStamp>kJh5j9xQUwsG2FVasXt5mdCH7AU=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Time</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Tc5Xpm4uC1EU7EZ9ApfGaMp9OkM=12/08/2023 12:02:46 p. m.12/08/2023 12:01:28 p. m.</TimeStamp>
+        <TimeStamp>Tc5Xpm4uC1EU7EZ9ApfGaMp9OkM=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>SalesTerritory</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>gNOfzYfka6Mgl82ZGRKLHLwALQQ=12/08/2023 08:07:12 p. m.12/08/2023 12:13:12 p. m.</TimeStamp>
+        <TimeStamp>gNOfzYfka6Mgl82ZGRKLHLwALQQ=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>DimReseller</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>XqUPo3oH6gZDjyVIICVKxdIZBC4=12/08/2023 08:07:12 p. m.12/08/2023 12:27:19 p. m.</TimeStamp>
+        <TimeStamp>XqUPo3oH6gZDjyVIICVKxdIZBC4=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Customer</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>0+d1Z6piPUB02or7unb/JVEhGH0=12/08/2023 08:00:26 p. m.12/08/2023 07:58:57 p. m.</TimeStamp>
+        <TimeStamp>0+d1Z6piPUB02or7unb/JVEhGH0=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Geography</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>sxoLzZnLDA7lwWfSYSPlQPP0+7I=12/08/2023 08:17:32 p. m.12/08/2023 08:16:05 p. m.</TimeStamp>
+        <TimeStamp>sxoLzZnLDA7lwWfSYSPlQPP0+7I=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Internet Sales</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>VkAvXfEWJjg2V9h78O30Ia+bZYA=12/08/2023 08:30:10 p. m.12/08/2023 08:26:16 p. m.</TimeStamp>
+        <TimeStamp>VkAvXfEWJjg2V9h78O30Ia+bZYA=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Sales Reason</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>w9rLFDyZa8c+/4DPY1B+xp30p+s=12/08/2023 08:35:20 p. m.12/08/2023 08:35:20 p. m.</TimeStamp>
+        <TimeStamp>w9rLFDyZa8c+/4DPY1B+xp30p+s=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Reseller Sales</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>pewhKAAXndP5GOVgcfWiUY8Pn04=12/08/2023 08:36:44 p. m.12/08/2023 07:00:38 p. m.OsL5S0DQfCw2B7Q5pW4tGTtTWbY=12/08/2023 08:30:10 p. m.12/08/2023 07:00:38 p. m.</TimeStamp>
+        <TimeStamp>Z+ifiKR/ofXIJxbYk9EQV7wZvAU=19/08/2023 06:42:47 p. m.19/08/2023 05:39:02 p. m.OsL5S0DQfCw2B7Q5pW4tGTtTWbY=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>cuboAdventureWorksDW2016</String>
         </ID>
@@ -125,7 +125,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>Te7kxCMkowvjzA7GeAUKYD7CVZE=11/08/2023 10:34:04 p. m.11/08/2023 10:34:03 p. m.</TimeStamp>
+      <TimeStamp>Te7kxCMkowvjzA7GeAUKYD7CVZE=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
       <ID>
         <String>SSSA_Ventas_AdventureWorks</String>
       </ID>
@@ -134,5 +134,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-08-15T03:37:08.516667Z</LastDeployed>
+  <LastDeployed>2023-08-20T00:42:50.67Z</LastDeployed>
 </DeploymentSnapshot>
