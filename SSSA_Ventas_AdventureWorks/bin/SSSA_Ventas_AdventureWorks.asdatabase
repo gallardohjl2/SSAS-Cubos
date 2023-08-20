@@ -757,7 +757,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15" scrolltop="6991" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="76" x="8493" y="13573" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15" scrolltop="6991" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="76" x="8625" y="13573" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -914,6 +914,12 @@
         <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
       </ErrorConfiguration>
       <CurrentStorageMode>Molap</CurrentStorageMode>
+      <Translations>
+        <Translation>
+          <Language>2058</Language>
+          <Caption>Producto</Caption>
+        </Translation>
+      </Translations>
       <Attributes>
         <Attribute>
           <ID>Product Key</ID>
@@ -936,6 +942,12 @@
               <ColumnID>EnglishProductName</ColumnID>
             </Source>
           </NameColumn>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Nombre Producto</Caption>
+            </Translation>
+          </Translations>
           <AttributeRelationships>
             <AttributeRelationship>
               <AttributeID>English Description</AttributeID>
@@ -974,6 +986,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Descripcion</Caption>
+            </Translation>
+          </Translations>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -991,6 +1009,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Subcategoria</Caption>
+            </Translation>
+          </Translations>
           <AttributeRelationships>
             <AttributeRelationship>
               <AttributeID>English Product Category Name</AttributeID>
@@ -1014,6 +1038,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Nombre Categoria</Caption>
+            </Translation>
+          </Translations>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -1030,6 +1060,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Lista de Precio</Caption>
+            </Translation>
+          </Translations>
           <DiscretizationMethod>EqualAreas</DiscretizationMethod>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -1046,6 +1082,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Precio</Caption>
+            </Translation>
+          </Translations>
           <DiscretizationMethod>Automatic</DiscretizationMethod>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -1062,6 +1104,12 @@
               </Source>
             </KeyColumn>
           </KeyColumns>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Peso</Caption>
+            </Translation>
+          </Translations>
           <DiscretizationMethod>Clusters</DiscretizationMethod>
           <DiscretizationBucketCount>5</DiscretizationBucketCount>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1079,16 +1127,34 @@
               <ID>Product Category Name</ID>
               <Name>Product Category Name</Name>
               <SourceAttributeID>English Product Category Name</SourceAttributeID>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Nombre Categoria</Caption>
+                </Translation>
+              </Translations>
             </Level>
             <Level>
               <ID>Product Subcategory Name</ID>
               <Name>Product Subcategory Name</Name>
               <SourceAttributeID>English Product Subcategory Name</SourceAttributeID>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Subcategoria</Caption>
+                </Translation>
+              </Translations>
             </Level>
             <Level>
               <ID>Product Name</ID>
               <Name>Product Name</Name>
               <SourceAttributeID>Product Key</SourceAttributeID>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Nombre Producto</Caption>
+                </Translation>
+              </Translations>
             </Level>
           </Levels>
         </Hierarchy>
@@ -3287,7 +3353,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-535" scrolltop="-6248" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="26379" y="13573" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-535" scrolltop="-2756" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="26379" y="13573" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -3993,7 +4059,7 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-          <Value>-6248</Value>
+          <Value>-2756</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -4010,10 +4076,22 @@
       </Annotations>
       <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
       <State>Unprocessed</State>
+      <Translations>
+        <Translation>
+          <Language>2058</Language>
+          <Caption>Ventas</Caption>
+        </Translation>
+      </Translations>
       <Dimensions>
         <Dimension>
           <ID>SalesTerritory</ID>
           <Name>SalesTerritory</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Territorio deventa</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>SalesTerritory</DimensionID>
           <Attributes>
             <Attribute>
@@ -4035,6 +4113,12 @@
         <Dimension>
           <ID>Ship Date</ID>
           <Name>Ship Date</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Fecha de Despacho</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Time</DimensionID>
           <Attributes>
             <Attribute>
@@ -4069,6 +4153,12 @@
         <Dimension>
           <ID>Employee</ID>
           <Name>Employee</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Empleado</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Dim Employee</DimensionID>
           <Attributes>
             <Attribute>
@@ -4108,6 +4198,12 @@
         <Dimension>
           <ID>Product</ID>
           <Name>Product</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Producto</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Product</DimensionID>
           <Attributes>
             <Attribute>
@@ -4141,6 +4237,12 @@
         <Dimension>
           <ID>Due Date</ID>
           <Name>Due Date</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Fecha Programada</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Time</DimensionID>
           <Attributes>
             <Attribute>
@@ -4175,6 +4277,12 @@
         <Dimension>
           <ID>Order Date</ID>
           <Name>Order Date</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Fecha de orden</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Time</DimensionID>
           <Attributes>
             <Attribute>
@@ -4209,6 +4317,12 @@
         <Dimension>
           <ID>Promotion</ID>
           <Name>Promotion</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Promocion</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Promotion</DimensionID>
           <Attributes>
             <Attribute>
@@ -4233,6 +4347,12 @@
         <Dimension>
           <ID>Reseller</ID>
           <Name>Reseller</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Distribuidor</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>DimReseller</DimensionID>
           <Attributes>
             <Attribute>
@@ -4278,6 +4398,12 @@
         <Dimension>
           <ID>Currency</ID>
           <Name>Currency</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Moneda</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Currency</DimensionID>
           <Attributes>
             <Attribute>
@@ -4288,6 +4414,12 @@
         <Dimension>
           <ID>Customer</ID>
           <Name>Customer</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Cliente</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Customer</DimensionID>
           <Attributes>
             <Attribute>
@@ -4355,6 +4487,12 @@
         <Dimension>
           <ID>Geography</ID>
           <Name>Geography</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Geografia</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Geography</DimensionID>
           <Attributes>
             <Attribute>
@@ -4376,6 +4514,12 @@
         <Dimension>
           <ID>Internet Sales</ID>
           <Name>Internet Sales</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Orden por internet</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Internet Sales</DimensionID>
           <Attributes>
             <Attribute>
@@ -4386,6 +4530,12 @@
         <Dimension>
           <ID>Sales Reason</ID>
           <Name>Sales Reason</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Motivo de compra</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Sales Reason</DimensionID>
           <Attributes>
             <Attribute>
@@ -4404,6 +4554,12 @@
         <Dimension>
           <ID>Reseller Sales</ID>
           <Name>Reseller Sales</Name>
+          <Translations>
+            <Translation>
+              <Language>2058</Language>
+              <Caption>Orden por Distribuidor</Caption>
+            </Translation>
+          </Translations>
           <DimensionID>Reseller Sales</DimensionID>
           <Attributes>
             <Attribute>
@@ -4412,6 +4568,339 @@
           </Attributes>
         </Dimension>
       </Dimensions>
+      <Perspectives>
+        <Perspective>
+          <ID>Perspectiva</ID>
+          <Name>Perspectiva Ventas Internet</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>SalesTerritory</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Territory Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Territory Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Territory Group</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Ship Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Semester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Number Of Year</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Product</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Product Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Description</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Product Subcategory Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Product Category Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>List Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dealer Price</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Weight</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Due Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Semester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Number Of Year</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Order Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Date Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Full Date Alternate Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Calendar Year</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Semester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Trimester</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month Number Of Year</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Promotion</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Promotion Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Discount Pct</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Promotion Type</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Promotion Category</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Currency</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Currency Key</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Customer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Customer Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Marital Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Education</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>State Province Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Country Region Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Territory Region</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Territory Country</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Territory Group</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Occupation</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Last Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Geography Key</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía 1</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía 2</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía 3</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía 4</HierarchyID>
+                </Hierarchy>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía 5</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Geography</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Geography Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>State Province Name</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>English Country Region Name</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Internet Sales</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Order Number</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Sales Reason</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>Sales Reason Key</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Sales Reason Reason Type</AttributeID>
+                </Attribute>
+              </Attributes>
+              <Hierarchies>
+                <Hierarchy>
+                  <HierarchyID>Jerarquía</HierarchyID>
+                </Hierarchy>
+              </Hierarchies>
+            </Dimension>
+          </Dimensions>
+          <MeasureGroups>
+            <MeasureGroup>
+              <MeasureGroupID>Fact Internet Sales</MeasureGroupID>
+              <Measures>
+                <Measure>
+                  <MeasureID>Order Quantity - Fact Internet Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Discount Amount - Fact Internet Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Sales Amount - Fact Internet Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Tax Amt - Fact Internet Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Freight - Fact Internet Sales</MeasureID>
+                </Measure>
+                <Measure>
+                  <MeasureID>Recuento Internet Sales</MeasureID>
+                </Measure>
+              </Measures>
+            </MeasureGroup>
+          </MeasureGroups>
+          <Calculations>
+            <Calculation>
+              <Name>[Measures].[Ventas del Periodo Pasado]</Name>
+              <Type>Member</Type>
+            </Calculation>
+            <Calculation>
+              <Name>[Measures].[Porcentaje de Ventas]</Name>
+              <Type>Member</Type>
+            </Calculation>
+          </Calculations>
+          <Kpis>
+            <Kpi>
+              <KpiID>KPI</KpiID>
+            </Kpi>
+            <Kpi>
+              <KpiID>KPI 1</KpiID>
+            </Kpi>
+          </Kpis>
+        </Perspective>
+      </Perspectives>
       <MeasureGroups>
         <MeasureGroup>
           <ID>Fact Internet Sales</ID>
@@ -4431,6 +4920,12 @@
                   <ColumnID>OrderQuantity</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Cantidad por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Discount Amount - Fact Internet Sales</ID>
@@ -4442,6 +4937,12 @@
                   <ColumnID>DiscountAmount</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Descuento por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Sales Amount - Fact Internet Sales</ID>
@@ -4453,6 +4954,12 @@
                   <ColumnID>SalesAmount</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Monto por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Tax Amt - Fact Internet Sales</ID>
@@ -4464,6 +4971,12 @@
                   <ColumnID>TaxAmt</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Impuesto por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Freight - Fact Internet Sales</ID>
@@ -4475,6 +4988,12 @@
                   <ColumnID>Freight</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Carga por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Recuento Internet Sales</ID>
@@ -4487,6 +5006,12 @@
                   <TableID>dbo_FactInternetSales</TableID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Cantidad de Ventas por internet</Caption>
+                </Translation>
+              </Translations>
             </Measure>
           </Measures>
           <StorageMode>Molap</StorageMode>
@@ -4716,6 +5241,12 @@
                   <ColumnID>OrderQuantity</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Cantidad por Distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Discount Amount</ID>
@@ -4727,6 +5258,12 @@
                   <ColumnID>DiscountAmount</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Descuento por Distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Sales Amount</ID>
@@ -4738,6 +5275,12 @@
                   <ColumnID>SalesAmount</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Monto por Distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Tax Amt</ID>
@@ -4749,6 +5292,12 @@
                   <ColumnID>TaxAmt</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Impuestopor distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Freight</ID>
@@ -4760,6 +5309,12 @@
                   <ColumnID>Freight</ColumnID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Carga por distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
             <Measure>
               <ID>Recuento Reseller Sales</ID>
@@ -4772,6 +5327,12 @@
                   <TableID>dbo_FactResellerSales</TableID>
                 </Source>
               </Source>
+              <Translations>
+                <Translation>
+                  <Language>2058</Language>
+                  <Caption>Cantidad de Ventas por Distribuidor</Caption>
+                </Translation>
+              </Translations>
             </Measure>
           </Measures>
           <StorageMode>Molap</StorageMode>
@@ -5093,8 +5654,8 @@
         <MdxScript>
           <ID>MdxScript</ID>
           <Name>MdxScript</Name>
-          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
           <Commands>
             <Command>
               <Text>/*

@@ -54,7 +54,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>6czBZ9kYwNDLkKvgv+E/sUHFRZk=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
+        <TimeStamp>UBxCwxhtBRDIA6GiNKrXmQALk1Q=19/08/2023 10:43:20 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>Product</String>
         </ID>
@@ -117,7 +117,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>Z+ifiKR/ofXIJxbYk9EQV7wZvAU=19/08/2023 06:42:47 p. m.19/08/2023 05:39:02 p. m.OsL5S0DQfCw2B7Q5pW4tGTtTWbY=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
+        <TimeStamp>ycdPY8F3d0+PejmqSZqnLWhF30c=19/08/2023 10:47:56 p. m.19/08/2023 05:39:02 p. m.OsL5S0DQfCw2B7Q5pW4tGTtTWbY=19/08/2023 05:39:02 p. m.19/08/2023 05:39:02 p. m.</TimeStamp>
         <ID>
           <String>cuboAdventureWorksDW2016</String>
         </ID>
@@ -134,5 +134,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-08-20T00:42:50.67Z</LastDeployed>
+  <LastDeployed>2023-08-20T04:47:59.833333Z</LastDeployed>
 </DeploymentSnapshot>
